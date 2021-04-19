@@ -1,0 +1,41 @@
+---
+title: "markdown"
+output: pdf_document
+---
+## Sobre o Rmarkdown
+
+O Rmarkdown é um pacote que permite gerar relatórios sofisticados, combinando textos e códigos. Assim, você pode documentar os seus trabalhos, incluindo os códigos e seus resultados, em um arquivo word, pdf, html ou até uma apresentação de powerpoint.
+
+Para criar um arquivo .Rmd abra o Rstudio, clique em file > New file > Rmarkdown.
+
+Selecione o formato que deseja como output (word, pdf ou html), sugiro pdf para compartilhar relatórios.
+
+Para salvar o arquivo em pdf, clique em knit e depois selecione knit to pdf. O arquivo pdf será gerado e automaticamente aberto em uma janela do seu computador. O arquivo pdf será salvo na mesma pasta em que você salvou o arquivo .Rmd
+
+
+Você também pode criar apresentações com o rmarkdown. Se você quiser criar um arquivo .Rmd para gerar uma apresentação do microsoft power point, clique em file>New file> Rmarkdown. Selecione presentation e clique na última opção, PowerPoint.
+
+Observe um exemplo de relatório a seguir, preste atenção nos comandos utilizados. 
+
+## Exemplo de relatório
+
+
+### Eficácia de sprays de insetos
+
+Mediu-se a quantidade de insetos (count), em unidades experimentais agrícolas tratadas com diferentes inseticidas (spray A, B, C, D, E, F):
+
+```{r , echo = FALSE}
+head(InsectSprays)
+```
+
+Comparando-se o seis grupos tratados com os diferentes inseticidas, temos:
+
+
+```{r , fig.cap= "Total insect count"}
+library(ggplot2)
+ggplot(InsectSprays, aes(x = spray, y = count)) + 
+  geom_boxplot()+
+  labs(x = "Type of spray", y = "Count of insects per experimental unit")
+```
+
+
