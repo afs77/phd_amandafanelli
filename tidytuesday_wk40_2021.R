@@ -45,13 +45,14 @@ static_plot <- ggplot(program_decade,
   coord_flip()+
   scale_fill_manual(values = c("lightpink", "lightgreen", 
                                "lightblue", "lightgrey")) +
-  theme_classic()+ theme(legend.title = element_blank(),
+  theme_classic()+ theme(legend.key.size = unit(20, "pt"),
                          text = element_text (size = 30),
                          plot.title = element_text(hjust = 1, vjust = 1),
                          plot.caption = element_text (hjust = 1, vjust = 1, 
                                                       size =20)) +
   labs(x = element_blank(), y = "Total papers published", 
-       caption = "Amanda Fanelli for TidyTuesday week 40. Data from National Bureau of Economic Research (NBER)") 
+       caption = "Amanda Fanelli for TidyTuesday week 40. Data from National Bureau of Economic Research (NBER)",
+       fill = "Category") 
   
 
 animated_plot <- static_plot + 
