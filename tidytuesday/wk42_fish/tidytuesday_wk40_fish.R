@@ -171,7 +171,7 @@ p4 <- ggplot(brazil_consumption, aes( x = Year, y = Quantity)) +
   geom_label(data = labels_2, aes(label = Year), hjust = 1, vjust = -0.25, size = 5) +
   labs(y = "Sea food consumption (kg/capta)",
        title = "Sea food consumption per capta increased in Brazil,specially 
-from 2005 to 2012, and then started to decrease.",
+from 2005 to 2012, and then started to decrease",
        subtitle = "From 2015 to 2017, consumption was similar.") +
   my_theme() 
 
@@ -213,8 +213,8 @@ p5
 title <- textGrob("How is sea food production and consumption in Brazil compared to other countries?", 
                   gp = gpar(fontsize = 20, fontface = 'bold'))
 caption <-textGrob("Data from ourworldindata.org | Amanda Fanelli for TidyTuesday Wk 42", 
-                    gp = gpar(fontsize = 10, fontface = 'bold'),
-                   just = c(-0.6,0))
+                    gp = gpar(fontsize = 12, fontface = 'bold'),
+                   just = c(-0.5,0))
 
 png(filename="tidytuesday/wk42_fish/fish_brazil.png", width = 40, height = 48, units = "cm", res = 300)
 grid.arrange(title,
