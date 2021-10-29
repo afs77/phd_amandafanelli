@@ -94,7 +94,7 @@ p1 <- ggplot(year_gender, aes(x = gender, y = total_participants, fill = gender)
                      axis.ticks.x = element_blank(),
                      text = element_text(family = "Garamond"),
                      plot.title = element_markdown(size = 22),
-                     plot.subtitle = element_markdown(size = 20),
+                     plot.subtitle = element_markdown(size = 19),
                      axis.text = element_text(size = 16),
                      axis.title.y = element_text(size = 18, vjust = -8,
                                                  color = "black"),
@@ -114,7 +114,7 @@ p2 <- ggplot(top_10_men, aes(x = country, y = total_participants)) +
        with the most male participants, but not in the female ranking") +
   theme_bw() + theme(text = element_text(family = "Garamond"),
                      plot.title = element_markdown(size = 22),
-                     plot.subtitle = element_markdown(size = 20),
+                     plot.subtitle = element_markdown(size = 19),
                      axis.text = element_text(size = 16, color = "black"),
                      axis.title = element_text(size = 18, color = "black"))
 
@@ -130,7 +130,7 @@ p3 <- ggplot(top_10_women, aes(x = country, y = total_participants)) +
        with the most female participants, but not in the male ranking") +
   theme_bw() + theme(text = element_text(family = "Garamond"),
                      plot.title = element_markdown(size = 22),
-                     plot.subtitle = element_markdown(size = 20),
+                     plot.subtitle = element_markdown(size = 19),
                      axis.text = element_text(size = 16, color = "black"),
                      axis.title = element_text(size = 18, color = "black"))
 
