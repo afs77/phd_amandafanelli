@@ -98,7 +98,8 @@ p1 <- ggplot(year_gender, aes(x = gender, y = total_participants, fill = gender)
                      axis.text = element_text(size = 16),
                      axis.title.y = element_text(size = 18, vjust = -8,
                                                  color = "black"),
-                     legend.text = element_text(size = 16),
+                     legend.title = element_text(size = 18),
+                     legend.text = element_text(size = 18),
                      strip.background = element_rect(fill = "dodgerblue4"),
                      strip.text = element_text(face = "bold", color = "white", size = 16))
 
@@ -115,8 +116,10 @@ p2 <- ggplot(top_10_men, aes(x = country, y = total_participants)) +
   theme_bw() + theme(text = element_text(family = "Garamond"),
                      plot.title = element_markdown(size = 22),
                      plot.subtitle = element_markdown(size = 19),
-                     axis.text = element_text(size = 16, color = "black"),
-                     axis.title = element_text(size = 18, color = "black"))
+                     axis.text.x = element_text(size = 15, color = "black"),
+                     axis.text.y = element_text(size = 16, color = "black"),
+                     axis.title = element_text(size = 18, color = "black"),
+                     plot.margin = margin(0,10,0,0))
 
 #Barplot female participants per country
 
@@ -131,15 +134,18 @@ p3 <- ggplot(top_10_women, aes(x = country, y = total_participants)) +
   theme_bw() + theme(text = element_text(family = "Garamond"),
                      plot.title = element_markdown(size = 22),
                      plot.subtitle = element_markdown(size = 19),
-                     axis.text = element_text(size = 16, color = "black"),
+                     axis.text.x = element_text(size = 15, color = "black"),
+                     axis.text.y = element_text(size = 16, color = "black"),
                      axis.title = element_text(size = 18, color = "black"))
 
 
 #Combining plots
 patchwork <- p1/(p2|p3)
-patchwork + plot_annotation(title = "Trends in Ultra Trail Running from 2012 to 2021") & 
-  theme(text = element_text(family = "Garamond", size = 22))
+patchwork + plot_annotation(title = "Trends in Ultra Trail Running from 2012 to 2021",
+                            caption = "Data from Benjamin Nowak by way of International Trail Running Association (ITRA)| Amanda Fanelli for #Tidytuesday",
+                            theme = theme (plot.title = element_text(family = "Garamond", size = 28),
+                                           plot.caption = element_text(family = "Garamond", size = 16, hjust = 0)))
 
 
-ggsave("tidytuesday/wk44_ultra_trail_run/ultra_trail.png", width = 18, height = 16, 
+ggsave("tidytuesday/wk44_ultra_trail_run/ultra_trail.png", width = 19, height = 16, 
        units = "in")
