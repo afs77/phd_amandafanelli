@@ -51,7 +51,7 @@ state_pumpkins_wt <- us_pumpkins %>%
 
 #US map, colored accordingly to the amount of pumpking entries
 
-p1 <- plot_usmap(regions = "states", data = state_pumpkins_total, 
+p1 <- plot_usmap(regions = "states", data = state_pumpkins_entries, 
            values = "n", labels = TRUE) +
   scale_fill_distiller(palette = "Oranges", direction = 1, name = "Number of entries") +
   labs(title = "US map colored according to the number of entries into the GPC in the 
@@ -63,6 +63,7 @@ pumpkin category, from 2013 to 2021",
         plot.subtitle = element_text(size = 20),
         legend.title = element_text(size = 16),
         legend.text = element_text(size = 16))
+p1
 
 # Distribution of pumpking weight per state
 
@@ -71,7 +72,7 @@ state_pumpkins_wt %>%
   filter(weight_lbs == max(state_pumpkins_wt$weight_lbs))
 
 #violin plot
-label <- left_join(top_states, state_pumpkins_total, by = "state") 
+label <- left_join(top_states, state_pumpkins_entries, by = "state") 
 
 my_colors <- rev(colorRampPalette(brewer.pal(9, "Oranges"))(30))
 
@@ -94,7 +95,7 @@ in 2018, by grower Steve Geddes. It weighted 2528 lbs!") +
                      axis.text = element_text(size = 16, face = "bold", color = "black"),
                      legend.position = "none")
 
-
+p2
 
 #annotations
 
