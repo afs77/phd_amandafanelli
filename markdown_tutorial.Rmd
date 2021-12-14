@@ -1,5 +1,5 @@
 ---
-title: "markdown"
+title: "Tutorial Rmarkdown"
 output: pdf_document
 ---
 ## Sobre o Rmarkdown
@@ -28,6 +28,7 @@ Mediu-se a quantidade de insetos (count), em unidades experimentais agrícolas t
 head(InsectSprays)
 ```
 
+\newpage
 Comparando-se o seis grupos tratados com os diferentes inseticidas, temos:
 
 
