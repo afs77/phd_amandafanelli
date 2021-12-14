@@ -1,6 +1,5 @@
 # phd_amandafanelli
-Projetos de visualização de dados e biotecnologia.
-Scripts relacionados ao conteúdo do instagram https://www.instagram.com/phd_amandafanelli/ e twitter @amandafanelli
+Códigos com tutoriais relacionados ao conteúdo do Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
+Cada arquivo contém um post associado no instagram.
 
-Data visualization and biotechnology projects.
-Content shared on twitter @amandafanelli and instagram @phd_amandafanelli
+Codes are tutorials, related to content shared on Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
