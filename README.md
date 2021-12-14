@@ -1,5 +1,7 @@
 # phd_amandafanelli
-Códigos com tutoriais relacionados ao conteúdo do Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
-Cada arquivo contém um post associado no instagram.
+:brazil:<br>
+- Códigos com tutoriais sobre R para análise e visualização de dados em biotecnologia, relacionados ao conteúdo do Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)<br>
+- Cada arquivo contém um post associado no instagram.
 
-Codes are tutorials, related to content shared on Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
+:us:<br>
+- Each file contains tutorials about R, related to content shared on Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
