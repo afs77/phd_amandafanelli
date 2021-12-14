@@ -1,7 +1,8 @@
 # phd_amandafanelli
 :brazil:<br>
-- Códigos com tutoriais sobre R para análise e visualização de dados em biotecnologia, relacionados ao conteúdo do Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)<br>
-- Cada arquivo contém um post associado no instagram.
+- Neste repositório estão os códigos dos tutoriais sobre R para análise e visualização de dados em biotecnologia, compartilhados no meu Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)<br>
+- Cada arquivo contém um post associado no instagram. O nome da pasta corresponde à data do post e ao tema do tutorial.
 
 :us:<br>
-- Each file contains tutorials about R, related to content shared on Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
+- In this repo are the codes used in tutorials about R, shared on my Instagram [phd_amandafanelli](https://www.instagram.com/phd_amandafanelli/)
+
